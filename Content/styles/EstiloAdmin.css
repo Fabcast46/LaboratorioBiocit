@@ -1,0 +1,552 @@
+* {
+  transition: all .2s ease;
+}
+
+/* Sección para pagina de inicio de sesión */
+.extra-info {
+  display: none;
+  line-height: 430px;
+  font-size: 12px;
+	position: absolute;
+  top: 0;
+  left: 113px;
+}
+
+.extra-info2 {
+  display: none;
+  line-height: 465px;
+  font-size: 12px;
+	position: absolute;
+  top: 0;
+  left: 113px;
+}
+
+.info:hover .extra-info {
+  display: block;
+}
+
+.info:hover .extra-info2 {
+  display: block;
+}
+
+.info {
+  font-size: 20px;
+  color: rgb(22, 16, 110);
+  padding-left: -10px;
+  padding-top: 10px;
+  width: 20px;
+  border-radius: 105px;
+}
+
+.info:hover {
+  background-color: white;
+  padding: 10 0 0 0px;
+  width: 410px;
+  text-align: left !important;
+}
+
+
+/* Sección para página principal de estudiante y profesor */
+
+.main {  
+  height: 100%;
+  width: 100%;
+  position:fixed;
+  z-index: 1; /* Stay on top */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.main2 {
+  margin-left: 350px; /* Same as the width of the sidenav */
+  height: 100%;
+  width: 100%;
+  position:fixed;
+  z-index: 1; /* Stay on top */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.calendar {
+  margin-left: 900px;
+  position: static;
+  overflow-x: auto;
+}
+
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 350px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #153170; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.labelWhite {
+  color: white;
+  font-size: 18px;
+  font-family: Arial;
+  margin-bottom: 50px;
+  position: relative;
+  left: 10px;  
+}
+
+.labelWhite2 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 50px;
+  font-family: Arial;
+  position: relative;
+  left: 20px;
+}
+
+.labelBlack {
+  color: black;
+  font-size: 18px;
+  font-family: Arial;
+}
+
+.blanckSpace {
+  font-size: 30px;
+  font-family: Arial;
+}
+
+
+.success {background-color: #4CAF50;} /* Green */
+.warning {background-color: #ff9800;} /* Orange */
+.danger {background-color: #f44336;} /* Red */ 
+.other {background-color: #e7e7e7; color: black;} /* Gray */ 
+
+.button3 {
+  background-color: #ffffff; /* Green */
+  border: none;
+  color: #153170;
+  border: 2px solid #ffffff;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+  bottom: 80px;
+  left: 20px;
+}
+
+.buttonBack {
+  background-color: #ffffff; /* Green */
+  border: #153170;
+  color: #153170;
+  border: 2px solid #ffffff;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: absolute;
+  left: 5px;
+}
+
+.buttonCal {
+  background-color: #153170; /* Green */
+  border: none;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  font-family: Arial;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+  top: 50%;
+  left: 20%;
+}
+
+.buttonCal2 {
+  background-color: #153170; /* Green */
+  border: none;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  font-family: Arial;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+
+/*.button3:hover {
+  background-color: #145628;
+  color: black
+}*/
+
+img {
+  border-radius: 8px;
+  position: relative;
+  left: 30px;
+}
+
+.labelCursos {
+  color: #153170;
+  font-size: 30px;
+  font-family: Arial;
+  font-weight: bold;
+  position: relative;
+  left: 35%;
+}
+
+.labelCursos3 {
+  color: #153170;
+  font-size: 30px;
+  font-family: Arial;
+  font-weight: bold;
+  position: fixed;
+  top: 50px;
+}
+
+.labelCursos2 {
+  color: #000000;
+  font-size: 22px;
+  font-family: Arial;
+  position: relative;
+  left: 80px;
+  top: 100px;
+}
+
+.cal {
+  position: relative;
+  top: 0px;
+}
+
+.labelCursos4 {
+  color: #153170;
+  font-size: 25px;
+  font-family: Arial;
+  font-weight: bold;
+  position: relative;
+  top: 95px;
+  left: 10px;
+}
+
+.round1 {
+  background-color: #153170;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: Arial;
+  font-weight: bold;
+  border-radius: 50%;
+  position: relative;
+  top: 90px;
+}
+
+.round2 {
+  background-color: #153170;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: Arial;
+  font-weight: bold;
+  border-radius: 50%;
+  position: relative;
+  top: 90px;
+  left: 20px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+/* The Modal (background) */
+.modalTarea {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modalTarea-content {
+  background-color: #ffffff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.closeTarea {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeTarea:hover,
+.closeTarea:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.labelTarea {
+  color: #153170;
+  font-size: 20px;
+  font-family: Arial;
+  font-weight: bold;
+  margin-bottom: 50px;
+  position: relative;
+  left: 10px;  
+}
+
+.labelTarea2 {
+  color: #153170;
+  font-size: 20px;
+  margin-bottom: 50px;
+  font-family: Arial;
+  font-weight: bold;
+  position: relative;
+  left: 20px;
+}
+
+/* The Modal (background) */
+.modalPerfil {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modalPerfil-content {
+  background-color: #ffffff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+.closePerfil {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closePerfil:hover,
+.closePerfil:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.labelPerfil {
+  color: #153170;
+  font-size: 20px;
+  font-family: Arial;
+  font-weight: bold;
+  margin-bottom: 50px;
+  position: relative;
+  left: 10px;  
+}
+
+.labelPerfilFoto {
+  color: #153170;
+  font-size: 20px;
+  font-family: Arial;
+  font-weight: bold;
+  margin-bottom: 50px;
+  position: relative;
+  left: 40px;  
+}
+
+input[type=text] {
+  width: 30%;
+  box-sizing: border-box;
+  font-size: 15px;
+  position: relative;
+  left: 50px;
+}
+
+.buttonPerfil {
+  background-color: #153170;
+  border: none;
+  color: #ffffff;
+  padding: 7px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Arial;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+
+.buttonObjetivos {
+  background-color: #153170; /* Green */
+    border: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+    top: 140px;  
+}
+
+.buttonGrupo {
+  background-color: #254ba5; /* Green */
+  border: none;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+  top: 140px;  
+  left: 30px;
+}
+
+
+/* Ventana emergente retos */
+  /* The Modal (background) */
+  .modalObjetivo {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modalObjetivo-content {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%;
+  }
+  
+  /* The Close Button */
+  .closeObjetivo {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeObjetivo:hover,
+  .closeObjetivo:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  .buttonActividad {
+    background-color: #254ba5; /* Green */
+    border: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+    left: 180px;
+  }
+
+  .buttonActividad4 {
+    background-color: #254ba5; /* Green */
+    border: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    position:fixed;
+     bottom:10px;
+     left:10px;
+  }
+
+  .labelActividad {
+    color: #153170;
+    font-size: 18px;
+    font-family: Arial;
+    position: relative;
+    left: 130px;
+  }

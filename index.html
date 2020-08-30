@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="es-es" ng-app="app">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BIOCIT</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/styles/HojaEstilo.css" rel="stylesheet" />
+    <link href="Content/freelancer.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/indexController.js"></script>
+</head>
+
+<body
+    style="background-color: #ffffff; background-image: url(https://okdiario.com/img/2019/10/05/que-tipos-de-celulas-existen.jpg);" min-width=1000px>
+
+
+
+    <div class="main">
+        <br><br><div class="mainFotos">
+            <div class="mainInfo1">
+                <br><div class="text1">
+                    Ofrecemos análisis de:
+                </div><br>
+                <div class="text">
+                    - Biopsias excisionales e incisionales
+                </div>
+                <div class="text">
+                    - Biopsias por aguja fina y aguja gruesa
+                </div>
+                <div class="text">
+                    - Citologías convencionales
+                </div>
+                <div class="text">
+                    - Citologías en fase líquida
+                </div>
+                <div class="text">
+                    - Líquidos corporales
+                </div>                
+            </div>
+            <div class="slideshow-container">
+                <div class="mySlides ">
+                    <img class="two" src="content/img_nature.jpg"
+                    width="250" height="300">
+                </div>
+                <div class="mySlides ">
+                    <img class="two" src="content/img_nature.jpg"
+                    width="300" height="300">
+                </div>                
+            </div>
+            
+        </div>
+        <div class="mainMap">
+            <div id="map"></div>
+        </div><br><br><br>
+    </div>
+
+    <div class="footer">
+        <div class="outer">
+            <div class="wrap">
+                <div class="sub">Estamos ubicados en local Laboratorio Calderón, al costado noreste del estadio
+                    municipal de Pérez Zeledón</div>
+                <div class="sub2">
+                    <label>Números telefónicos</label><br>
+                    <span class="labelFoot">2771-1113/2771-2030/</span><br>
+                    <span class="labelFoot">8321-6724</span>
+                </div>
+                <div class="sub2">
+                    <label>Correo Electrónico</label><br>
+                    <span class="labelFoot">laboratoriobiocit@gmail.com</span>
+                </div>
+                <div class="sub2">
+                    
+                    <label>Horario de atención</label><br>
+                    <span class="labelFoot">Lunes a Viernes de 06:30 a 18:00</span><br>
+                    <span class="labelFoot">Sábados de 06:30 a 13:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="Mision.html">Misión</a>
+        <a href="Profesionales.html">Profesionales</a>
+        <a href="Ubicacion.html">Ubicación</a>
+        <a href="Contactos.html">Contáctenos</a>
+        <img src="content/Logo3.png" align="right">
+    </div><br><br>
+
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var uluru = { lat: 9.369213, lng: -83.704047 };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), { zoom: 17, center: uluru });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({ position: uluru, map: map });
+        }
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+    </script>
+    <!--Load the API from the specified URL
+            * The async attribute allows the browser to render the page while the API loads
+            * The key parameter will contain your own API key (which is not needed for this tutorial)
+            * The callback parameter executes the initMap() function
+            -->
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBisz8O4f4tzPUIlfN0jTnd_mEZg0aVVxE&callback=initMap">
+        </script>
+</body>
+
+</html>

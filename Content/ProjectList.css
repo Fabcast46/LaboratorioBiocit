@@ -1,0 +1,24 @@
+﻿ulp {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #18BB9C;
+}
+
+lip ap {
+    display: block;
+   color:#2D3E50;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+lip ap.active {
+    background-color: white;
+    color:  #18BB9C;
+}
+
+lip ap:hover:not(.active) {
+    background-color: white;
+    color:  #18BB9C;
+}

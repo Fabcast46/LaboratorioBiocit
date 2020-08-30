@@ -1,0 +1,156 @@
+* {
+    transition: all .2s ease;
+  }
+
+  #map {
+    height: 100%;  /* The height is 400 pixels */
+   }  
+
+  img.two {
+    height: auto;
+    width: 80%;
+  }
+
+
+   /* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #23dda5;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  padding-right: 4%;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  font-size:1.6vw;
+  font-family: serif;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: #333;
+}
+
+/* Main content */
+.main {
+  margin-top: 3%; /* Add a top margin to avoid content overlay */
+  width: 80%;
+  height: 70%;
+  margin-left: 10%;
+  color: white
+}
+
+.mainFotos {
+  width: 100%;
+  background-color: white;  
+  height: 90%;
+}
+
+
+
+.mainInfo1 {
+  width: 53.5%;
+  position: absolute;
+  
+  background-color: white;
+  color: #0b752b;
+  display: inline-block;
+  text-align: center;
+  font-family: serif;  
+}
+
+.mainInfo2 {
+  width: 80%;
+  margin-top: 8%;
+  position: absolute;  
+  background-color: white;
+  color: #0b752b;
+  display: inline-block;
+  text-align: center;
+  font-family: serif;  
+  padding-left: 2cm;
+  padding-right: 2cm;
+}
+
+.mySlides {
+  display: none;
+  height: 60%;
+}
+
+img {vertical-align: top}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 25%;
+  margin-left: 73.6%;
+  display: inline-block;
+}
+
+.text1{
+  font-size:1.8vw;
+  font-weight: bold;
+  font-family: serif;
+}
+
+.text{
+  font-size:1.8vw;
+  font-family: serif;
+  
+}
+
+p.ex1 {
+  max-width: 50px;
+}
+
+.mainMap {
+  width: 100%;
+  height: 170px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #23dda5;
+  color: black;
+  font-family: serif;
+  flex-direction: column;
+}
+
+
+.outer{background:#23dda5;}
+.wrap{margin:0 auto; }
+.sub{
+    padding:5px;
+    width:30%;
+    background:#23dda5;
+    display:table-cell;
+    border-right:solid #b3b3b3 2px;  
+    font-size:1.5vw;
+    
+}
+.sub2{
+  padding:5px;
+  width:20%;
+  background:#23dda5;
+  display:table-cell;
+  border-right:solid #b3b3b3 2px;  
+  font-size:1.4vw;
+  text-align-last: left;
+}
+
+.labelFoot{
+  font-size:1.4vw;
+}
+.sub2:last-child{border:0px}
+
