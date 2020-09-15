@@ -70,7 +70,7 @@
 
 .mainInfo2 {
   width: 80%;
-  margin-top: 8%;
+  margin-top: 3%;
   position: absolute;  
   background-color: white;
   color: #0b752b;
@@ -87,6 +87,10 @@
 }
 
 img {vertical-align: top}
+
+html, body {
+  height: 100%;
+}
 
 /* Slideshow container */
 .slideshow-container {
