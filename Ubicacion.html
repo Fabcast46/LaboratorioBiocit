@@ -32,23 +32,10 @@
 
 
     <div class="main">
-        <div class="mainFotos">
-            <div class="mainInfo2">
-                <br>
-                <div class="text">
-                    <strong>Laboratorio Biocit</strong> inició sus labores el 21 de abril de 1999 en las 
-                    actividades de procesamiento y diagnóstico de <strong>biopsias y citologías</strong>;
-                    domicilio comercial <strong>San Isidro del General, Pérez Zeledón</strong>. Ofrecemos 
-                    servicios patológicos a médicos, empresas, organizaciones y a personas.
-                </div>            
-                <di class="text"><br>
-                    Nuestra finalidad es ofectuar el procesamiento de las muestras en el <strong>menor tiempo posible </strong>
-                    de la forma más <strong>oportuna</strong> posible, gracias al personal el cual cuenta con <strong>amplia experiencia</strong> 
-                    y está <strong>altamente calificado</strong>.
-                </di>
-                <br><br>
-            </div>
-        </div>
+        <br><br>
+        <div class="mainMap2">
+            <div id="map"></div>
+        </div><br><br><br>
     </div>
 
     <div class="footer">
@@ -76,7 +63,7 @@
         </div>
     </div>
 
-    <div class="navbar">        
+    <div class="navbar">
         <a href="index.html">Inicio</a>
         <a href="Mision.html">Misión</a>
         <a href="Profesionales.html">Profesionales</a>
@@ -84,7 +71,43 @@
         <a href="Contactos.html">Contáctenos</a>
         <img src="https://raw.githubusercontent.com/Fabcast46/LaboratorioBiocit/master/Content/Logo.png" height="47px" align="right">
     </div><br><br>
-    
+
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var uluru = { lat: 9.369213, lng: -83.704047 };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), { zoom: 17, center: uluru });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({ position: uluru, map: map });
+        }
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+    </script>
+    <!--Load the API from the specified URL
+            * The async attribute allows the browser to render the page while the API loads
+            * The key parameter will contain your own API key (which is not needed for this tutorial)
+            * The callback parameter executes the initMap() function
+            -->
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBisz8O4f4tzPUIlfN0jTnd_mEZg0aVVxE&callback=initMap">
+        </script>
 </body>
 
 </html>
